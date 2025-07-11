@@ -15,5 +15,9 @@ type LogUse {
 
 type Query {
   topDensityCountries(limit: Int!, username: String!): [Country!]!
+    @field(resolver: "App\\GraphQL\\Resolvers\\CountryResolver@topDensityCountries")
+
   usageLogs: [LogUse!]!
+    @field(resolver: "App\\GraphQL\\Resolvers\\CountryResolver@usageLogs")
 }
+

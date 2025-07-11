@@ -2,9 +2,10 @@
 
 return [
     'route' => [
-        'uri' => '/graphql',
-        'middleware' => ['web'],
-    ],
+            'uri' => '/graphql',
+            'middleware' => ['api'],
+],
+
 
     'schema' => [
         'register' => base_path('graphql/schema.graphql'),
