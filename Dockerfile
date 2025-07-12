@@ -15,7 +15,7 @@ WORKDIR /var/www/html
 COPY . .
 
 # 📚 Instala las dependencias de Laravel
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install 
 
 # 🔐 Variables de entorno básicas (puedes definirlas directamente en Render también)
 ENV DB_CONNECTION=pgsql
