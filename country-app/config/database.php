@@ -94,11 +94,7 @@ return [
     'prefix' => '',
     'prefix_indexes' => true,
     'schema' => 'public',
-    'sslmode' => env('DB_SSLMODE', 'require'),
-  /* 'options' => [
-        PDO::ATTR_EMULATE_PREPARES => true,
-        'endpoint' => env('NEON_ENDPOINT')
-    ], */
+    'sslmode' => env('DB_SSLMODE', 'require')
 ],
 
         'sqlsrv' => [
