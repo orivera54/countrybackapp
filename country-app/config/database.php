@@ -84,6 +84,7 @@ return [
 
         'pgsql' => [
     'driver' => 'pgsql',
+    'url' => env('DATABASE_URL'),
     'host' => env('DB_HOST'),
     'port' => env('DB_PORT', 5432),
     'database' => env('DB_DATABASE'),
@@ -94,10 +95,10 @@ return [
     'prefix_indexes' => true,
     'schema' => 'public',
     'sslmode' => env('DB_SSLMODE', 'require'),
-    'options' => [
+  /* 'options' => [
         PDO::ATTR_EMULATE_PREPARES => true,
         'endpoint' => env('NEON_ENDPOINT')
-    ],
+    ], */
 ],
 
         'sqlsrv' => [
