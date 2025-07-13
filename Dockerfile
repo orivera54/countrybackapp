@@ -23,7 +23,7 @@ RUN apk add --no-cache \
     opcache
 
 # Configurar Nginx
-COPY docker/nginx.conf /etc/nginx/nginx.conf
+#COPY docker/nginx.conf /etc/nginx/nginx.conf
 
 # Configurar PHP
 #COPY docker/php.ini /usr/local/etc/php/conf.d/opcache.ini
