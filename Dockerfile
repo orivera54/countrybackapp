@@ -26,7 +26,7 @@ RUN apk add --no-cache \
 COPY docker/nginx.conf /etc/nginx/nginx.conf
 
 # Configurar PHP
-COPY docker/php.ini /usr/local/etc/php/conf.d/opcache.ini
+#COPY docker/php.ini /usr/local/etc/php/conf.d/opcache.ini
 
 # Configurar supervisor
 #COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
